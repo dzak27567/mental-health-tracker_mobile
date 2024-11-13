@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 // Impor drawer widget
 import 'package:mental_health_tracker_mobile/widgets/left_drawer.dart';
-import 'package:mental_health_tracker_mobile/moodentry_form.dart';
+import 'package:mental_health_tracker_mobile/screens/moodentry_form.dart';
 
 class MyHomePage extends StatelessWidget {
     
@@ -159,7 +159,7 @@ class ItemCard extends StatelessWidget {
       
       child: InkWell(
         // Aksi ketika kartu ditekan.
-        onTap: () {
+        onTap: () async {
           // Menampilkan pesan SnackBar saat kartu ditekan.
           ScaffoldMessenger.of(context)
             ..hideCurrentSnackBar()
